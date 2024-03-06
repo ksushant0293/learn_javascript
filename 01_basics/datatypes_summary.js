@@ -38,3 +38,30 @@ const myFunction = function(){
 console.log(typeof heros);  // object
 console.log(typeof myObj); // object
 console.log(typeof myFunction); //object function
+
+//************************************************************ *//
+// memory
+//stack(primitve), heap (NoN-primitve)
+// whenever we use stack memory (ex: we decalre a variable) we get a copy
+// in heap we get a reference of original value .
+
+let myYoutubeName = "sushantYoutube"
+let anotherName = myYoutubeName;
+anotherName = "sushantSocialMedia";
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user1@google.com",
+    upi: "user1@ybl"
+}
+
+console.log(userOne);
+
+let userTwo = userOne;
+console.log(userTwo);
+
+userTwo.email = "userTwo@yahoo.com";
+console.log(userOne.email); // here value change in userone as changed in unsertwo because we get reference(original value)
+console.log(userTwo.email);
