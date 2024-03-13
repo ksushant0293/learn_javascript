@@ -1,5 +1,3 @@
-
-
 function sayMyName() {
     console.log("s");
     console.log("u");
@@ -73,5 +71,46 @@ function loginUserMessage(username = "sam"){
     }
     return `${username} just Logged In`;
 };
-console.log(loginUserMessage());
-console.log(loginUserMessage("sushant"));
+// console.log(loginUserMessage());
+// console.log(loginUserMessage("sushant"));
+
+
+function calculateCartPrice(num1){
+    return num1;
+}
+// calculateCartPrice(7);
+// console.log(calculateCartPrice(7));
+
+// rest operator(if we have multiple arguments)
+// function calculateCartPrice(...num1){
+//     return num1;
+// }
+// console.log(calculateCartPrice(200,500,700));
+
+
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1;
+// }
+// console.log(calculateCartPrice(300,400,700, 8900));
+
+const user ={
+    username: "sushant",
+    price: 200
+}
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+} 
+
+// handleObject(user);
+handleObject({
+    usernme: "sushant",
+    price: 467
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([100, 2000,3000]));
